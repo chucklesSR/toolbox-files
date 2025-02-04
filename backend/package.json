@@ -1,0 +1,33 @@
+{
+  "name": "toolbox-files",
+  "version": "1.0.0",
+  "description": "Code challenge Full Stack for Toolbox",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "start:dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chucklesSR/toolbox-files.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chucklesSR/toolbox-files/issues"
+  },
+  "homepage": "https://github.com/chucklesSR/toolbox-files#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  },
+  "type": "module"
+}
