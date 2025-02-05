@@ -1,9 +1,10 @@
+
 # toolbox-files
-Code challenge Full Stack for Toolbox
+Full Stack Code Challenge for Toolbox
 
-Este proyecto contiene un backend desarrollado en Node.js y un frontend creado con React. Ambos servicios están configurados para ejecutarse mediante Docker Compose.
+This project contains a backend developed in Node.js and a frontend created with React. Both services are configured to run using Docker Compose.
 
-## 🛠️ Estructura del proyecto
+## 🛠️ Project Structure
 
 project-root/
 
@@ -11,28 +12,28 @@ project-root/
 
 └── frontend/
 
-## 🚀 Instrucciones para iniciar el proyecto
+## 🚀 Instructions to Start the Project
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
-git clone
+git clone <repository-url>
 cd project-root
 ```
 
-### 2. Iniciar los contenedores
+### 2. Start the containers
 
 ```bash
 docker-compose up --build
 ```
 
-### 3. Acceder a las aplicaciones
+### 3. Access the applications
 
 Frontend (React): http://localhost:3000
 
 Backend (Node.js): http://localhost:3001
 
-## Ejecutar test
+## Run tests
 
 ### 1. Frontend
 
