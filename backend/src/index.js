@@ -47,19 +47,23 @@ const getFiles = async (files) => {
 }
 
 app.get('/files/data', async (req, res) => {
-  const { fileName } = req.query
-  if (fileName) {
-    const files = await getFiles([fileName])
-    return res.status(200).json({ data: files, status: 200 })
-  }
-  const { data } = await axios.get('https://echo-serv.tbxnet.com/v1/secret/files', {
-    headers: {
-      Authorization: 'Bearer aSuperSecretKey'
+  try {
+    const { fileName } = req.query
+    if (fileName) {
+      const files = await getFiles([fileName])
+      return res.status(200).json({ data: files, status: 200 })
     }
-  })
+    const { data } = await axios.get('https://echo-serv.tbxnet.com/v1/secret/files', {
+      headers: {
+        Authorization: 'Bearer aSuperSecretKey'
+      }
+    })
 
-  const files = await getFiles(data.files)
-  return res.status(200).json({ data: files, status: 200 })
+    const files = await getFiles(data.files)
+    return res.status(200).json({ data: files, status: 200 })
+  } catch (error) {
+    return res.status(500).json({ message: 'Error getting files', status: 500 })
+  }
 })
 
 const main = async () => {
@@ -68,3 +72,5 @@ const main = async () => {
 }
 
 main()
+
+export default app

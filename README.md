@@ -31,3 +31,21 @@ docker-compose up --build
 Frontend (React): http://localhost:3000
 
 Backend (Node.js): http://localhost:3001
+
+## Ejecutar test
+
+### 1. Fronted
+
+```bash
+cd fronted
+nvm use
+npm test
+```
+
+### 1. Fronted
+
+```bash
+cd backend
+nvm use
+npm test
+```
