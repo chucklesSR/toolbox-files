@@ -37,7 +37,7 @@ Backend (Node.js): http://localhost:3001
 ### 1. Frontend
 
 ```bash
-cd fronted
+cd frontend
 nvm use
 npm test
 ```
