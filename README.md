@@ -34,7 +34,7 @@ Backend (Node.js): http://localhost:3001
 
 ## Ejecutar test
 
-### 1. Fronted
+### 1. Frontend
 
 ```bash
 cd fronted
@@ -42,7 +42,7 @@ nvm use
 npm test
 ```
 
-### 1. Fronted
+### 2. Backend
 
 ```bash
 cd backend
